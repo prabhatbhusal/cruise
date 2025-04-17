@@ -120,7 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
-.swiper {
+swiper {
   width: 100%;
   height: 100%;
 }
