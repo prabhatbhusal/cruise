@@ -135,6 +135,7 @@ const page = () => {
       {/* Curved SVG shape divider at the bottom */}
 
       <div className="h-100 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)] bg-fill text-white p-40 gap-3">
+        <Image src="/images/Ellipse.png" width={200} height={100} alt="logo" />
         <Image src="/images/Vector1.svg" width={200} height={100} alt="logo" />
         <h1>Our Mission And Vision</h1>
         <p>To create unforgettable journeys across the sea.</p>
@@ -157,7 +158,10 @@ const page = () => {
         </p>
         <div className="flex gap-1 justify-center items-center ">
           {links.map((links, idx) => (
-            <div key={idx} className="flex flex-col justify-center items-center text-center gap-2 ">
+            <div
+              key={idx}
+              className="flex flex-col justify-center items-center text-center gap-2 "
+            >
               <Image src={links.img} width={32} height={32} alt="logo" />
               <h1>{links.title}</h1>
               <p>{links.content}</p>
@@ -201,7 +205,7 @@ const page = () => {
                 VIEW ALL
               </button>
             </div>
-            <div className='flex gap-5'>
+            <div className="flex gap-5">
               <div className="flex h-[200px] gap-5">
                 <Image
                   src="/images/ship.png"
@@ -228,8 +232,6 @@ const page = () => {
                 />
               </div>
             </div>
-
-
           </div>
         </div>
         <div></div>
