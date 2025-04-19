@@ -110,9 +110,9 @@ const page = () => {
           Not just a journey — it’s a collection of once-in-a-lifetime moments.
           Imagine waking up to a new horizon each day, dining under the stars,
           exploring exotic ports, and sharing laughter with fellow travelers.
-          Whether you're chasing sunsets in the Caribbean, discovering hidden
-          gems in the Mediterranean, or relaxing on a luxury deck with a drink
-          in hand — unforgettable is just the beginning.
+          Whether you&apos;re chasing sunsets in the Caribbean, discovering
+          hidden gems in the Mediterranean, or relaxing on a luxury deck with a
+          drink in hand — unforgettable is just the beginning.
         </p>
         <p className="text-md ">
           Come aboard and create memories that stay with you long after the
@@ -149,7 +149,14 @@ const page = () => {
       </div>
       {/* Curved SVG shape divider at the bottom */}
 
-      <div className="h-100 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)]  text-white p-40 gap-3">
+      <div className="h-120 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)]  text-white p-40 gap-3">
+        <Image
+          src="/images/Ellipse.svg"
+          alt="alt"
+          width={1700}
+          height={50}
+          className="absolute mt-[-450px] bg-none"
+        />
         <Image src="/images/Vector1.svg" width={200} height={100} alt="logo" />
         <h1>Our Mission And Vision</h1>
         <p>To create unforgettable journeys across the sea.</p>
@@ -159,8 +166,15 @@ const page = () => {
           <br />
           service, and a deep commitment to exploration and connection.
         </p>
+        <Image
+          src="/images/Ellipse.svg"
+          alt="alt"
+          width={1700}
+          height={50}
+          className="absolute mt-120 bg-none"
+        />
       </div>
-      <div className="h-110 w-full flex flex-col  justify-center items-center  bg-blend-overlay object-contain bg-teal-600 text-white p-40 gap-3">
+      <div className="h-120 w-full flex flex-col  justify-center items-center  bg-blend-overlay object-contain bg-teal-600 text-white py-50 px-40 gap-3">
         <h1>
           Why <br />
           Choose Yeti Cruise
@@ -187,8 +201,15 @@ const page = () => {
         </button>
       </div>
       <div className="h-200 bg-[#F9F6ED]">
-        <div>
-          <div className="flex items-center justify-between ">
+        <Image
+          src="/images/Ellipse1.png"
+          alt="alt"
+          width={1800}
+          height={50}
+          className="absolute   top-596"
+        />
+        <div className="mt-19 p-5">
+          <div className="flex items-center justify-between mt-10">
             <div className="flex flex-col ">
               <p>Cruise in Style</p>
               <h1 className="text-4xl text-teal-600 font-bold">
@@ -278,27 +299,6 @@ const page = () => {
         </div>
         <div></div>
         <div></div>
-      </div>
-      <div className="min-h-screen bg-[#f9f5ef] p-6">
-        <h1 className="text-4xl font-bold text-teal-900 mb-6">
-          Epic Ocean Cruise Gallery
-        </h1>
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {images.map((src, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg shadow-md break-inside-avoid"
-            >
-              <Image
-                src={src}
-                alt={`Cruise image ${index + 1}`}
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover rounded-lg hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
