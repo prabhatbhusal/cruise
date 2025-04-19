@@ -71,6 +71,21 @@ const page = () => {
         "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
     },
   ];
+
+
+
+
+
+  const images = [
+    "/images/image1.png",
+    "/images/image2.png",
+    "/images/image1.png",
+    "/images/image1.png",
+    "/images/image1.png",
+    "/images/image1.png",
+    "/images/image1.png",
+    "/images/image1.png",
+  ];
   return (
     <div>
       <div
@@ -134,8 +149,7 @@ const page = () => {
       </div>
       {/* Curved SVG shape divider at the bottom */}
 
-      <div className="h-100 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)] bg-fill text-white p-40 gap-3">
-        <Image src="/images/Ellipse.png" width={200} height={100} alt="logo" />
+      <div className="h-100 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)]  text-white p-40 gap-3">
         <Image src="/images/Vector1.svg" width={200} height={100} alt="logo" />
         <h1>Our Mission And Vision</h1>
         <p>To create unforgettable journeys across the sea.</p>
@@ -205,30 +219,58 @@ const page = () => {
                 VIEW ALL
               </button>
             </div>
+            <Image
+              src="/images/leaf.svg"
+              alt="alt"
+              width={500}
+              height={100}
+              className="absolute top-625 z-100  fill object-cover"
+            />
             <div className="flex gap-5">
-              <div className="flex h-[200px] gap-5">
+              <div className="grid grid-cols-2 h-[200px] gap-5">
                 <Image
                   src="/images/ship.png"
-                  width={175}
+                  width={250}
+                  height={400}
+                  alt="logo"
+                  className="rounded-xl"
+                />
+                <Image
+                  src="/images/ship.png"
+                  width={250}
+                  height={200}
+                  alt="logo"
+                  className="rounded-xl"
+                />
+                <Image
+                  src="/images/ship.png"
+                  width={250}
                   height={300}
                   alt="logo"
                   className="rounded-xl"
                 />
                 <Image
                   src="/images/ship.png"
-                  width={175}
+                  width={250}
                   height={200}
                   alt="logo"
                   className="rounded-xl"
                 />
               </div>
-              <div className="h-[100px]">
+              <div className="h-[100px] ">
                 <Image
                   src="/images/ship.png"
                   width={400}
                   height={100}
                   alt="logo"
-                  className="rounded-xl h-100"
+                  className="rounded-xl h-[500] right-"
+                />
+                <Image
+                  src="/images/ship.png"
+                  width={250}
+                  height={250}
+                  alt="logo"
+                  className="rounded-xl h-[260px] absolute left-110 top-670 "
                 />
               </div>
             </div>
@@ -236,6 +278,27 @@ const page = () => {
         </div>
         <div></div>
         <div></div>
+      </div>
+      <div className="min-h-screen bg-[#f9f5ef] p-6">
+        <h1 className="text-4xl font-bold text-teal-900 mb-6">
+          Epic Ocean Cruise Gallery
+        </h1>
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {images.map((src, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-lg shadow-md break-inside-avoid"
+            >
+              <Image
+                src={src}
+                alt={`Cruise image ${index + 1}`}
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

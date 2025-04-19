@@ -136,7 +136,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full z-40 transition-all ${
+      className={`w-full z-1000 transition-all ${
         isScrolled && "fixed top-0 bg-white shadow-md"
       }`}
     >
@@ -341,7 +341,7 @@ const Navbar = () => {
                 className="group h-full relative overflow-hidden uppercase"
               >
                 <span className="relative z-10">Book Now</span>
-                <span className="absolute left-0 top-1/2 h-full w-full rounded-full bg-[#176864] transition-transform duration-500 ease-in-out transform -translate-x-full -translate-y-1/2 group-hover:h-20 group-hover:scale-110 group-hover:translate-x-0 z-0"></span>
+                <span className="absolute left-0 top-1/2 h-full w-full rounded-full bg-[#176864] transition-transform duration-500 ease-in-out transform -translate-y-1/2 -translate-x-full group-hover:h-20 group-hover:scale-110 group-hover:translate-x-0 z-0"></span>
               </Button>
               {/* <Button
                 variant="primary"
