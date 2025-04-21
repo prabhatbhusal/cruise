@@ -119,6 +119,7 @@ const page = () => {
           waves fade.
         </p>
       </div>
+      <div className="h-100 "></div>
       <div className="relative bg-gray-700 bg-[url(/images/ship.png)] bg-blend-multiply text-white px-40 py-40 flex flex-row gap-10 justify-center items-center">
         <Image src="/images/ship.png" width={500} height={100} alt="images" />
 
@@ -149,32 +150,42 @@ const page = () => {
       </div>
       {/* Curved SVG shape divider at the bottom */}
 
-      <div className="h-120 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)]  text-white p-40 gap-3">
+      <div className="h-80 w-full flex flex-col  justify-center items-center bg-[url(/images/image4.png)]  text-white p-40 gap-3">
         <Image
           src="/images/Ellipse.svg"
           alt="alt"
           width={1700}
-          height={50}
-          className="absolute mt-[-450px] bg-none"
+          height={100}
+          className="absolute mt-[-390px]  "
         />
-        <Image src="/images/Vector1.svg" width={200} height={100} alt="logo" />
-        <h1>Our Mission And Vision</h1>
-        <p>To create unforgettable journeys across the sea.</p>
-        <p>
-          {" "}
-          To redefine cruise travel through meaningful experiences, exceptional
-          <br />
-          service, and a deep commitment to exploration and connection.
-        </p>
+        <Image
+          className="z-10 "
+          src="/images/Vector1.svg"
+          width={200}
+          height={100}
+          alt="logo"
+        />
+        <h1 className="text-4xl">Our Mission And Vision</h1>
+        <div className="flex flex-col justify-center items-center z-[10] text-2xl ">
+          <p>To create unforgettable journeys across the sea.</p>
+          <p>
+            {" "}
+            To redefine cruise travel through meaningful experiences,
+            exceptional
+            <br />
+            service, and a deep commitment to exploration and connection.
+          </p>
+        </div>
+
         <Image
           src="/images/Ellipse.svg"
           alt="alt"
           width={1700}
-          height={50}
-          className="absolute mt-120 bg-none"
+          height={10}
+          className="absolute mt-60 h-50 "
         />
       </div>
-      <div className="h-120 w-full flex flex-col  justify-center items-center  bg-blend-overlay object-contain bg-teal-600 text-white py-50 px-40 gap-3">
+      <div className="h-130 w-full flex flex-col  justify-center items-center  bg-blend-overlay object-contain bg-teal-600 text-white py-55 px-40 gap-3">
         <h1>
           Why <br />
           Choose Yeti Cruise
@@ -184,11 +195,11 @@ const page = () => {
           vibrant cultures <br /> of the Mediterranean, we have the perfect
           voyage for you.
         </p>
-        <div className="flex gap-1 justify-center items-center ">
+        <div className="flex lg:flex-row gap-1 justify-center items-center sm:flex-col">
           {links.map((links, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center text-center gap-2 "
+              className="flex flex-col justify-center items-center text-center gap-2 sm:flex-col "
             >
               <Image src={links.img} width={32} height={32} alt="logo" />
               <h1>{links.title}</h1>
@@ -199,17 +210,17 @@ const page = () => {
         <button className="px-3 py-2  bg-white text-black hover:text-white hover:bg-teal-600 hover:border-white hover:border">
           Explore Now
         </button>
-      </div>
-      <div className="h-200 bg-[#F9F6ED]">
         <Image
           src="/images/Ellipse1.png"
           alt="alt"
           width={1800}
           height={50}
-          className="absolute   top-596"
+          className="absolute h-30  top-665"
         />
-        <div className="mt-19 p-5">
-          <div className="flex items-center justify-between mt-10">
+      </div>
+      <div className="h-250 bg-[#F9F6ED]">
+        <div className="mt-4 px-5 py-8 gap-5">
+          <div className="flex items-center justify-between ">
             <div className="flex flex-col ">
               <p>Cruise in Style</p>
               <h1 className="text-4xl text-teal-600 font-bold">
@@ -217,24 +228,24 @@ const page = () => {
                 <br /> Cruise ever <br /> to set sail
               </h1>
             </div>
-            <div className="flex gap-[19px] mt-10 h-[190px]  ">
+            <div className="flex gap-[29px] h-[190px]  ">
               <Image
                 src="/images/ship.png"
-                width={175}
-                height={300}
+                width={250}
+                height={400}
                 alt="logo"
-                className="rounded-xl"
+                className="rounded-xl h-70 "
               />
               <Image
                 src="/images/ship.png"
-                width={175}
-                height={300}
+                width={250}
+                height={400}
                 alt="logo"
-                className="rounded-xl"
+                className="rounded-xl h-70"
               />
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-5">
             <div>
               <button className="border-gray-400 text-gray-500 border px-10 py-2.5 rounded-full ">
                 VIEW ALL
@@ -245,53 +256,53 @@ const page = () => {
               alt="alt"
               width={500}
               height={100}
-              className="absolute top-625 z-100  fill object-cover"
+              className="absolute  z-100  fill object-cover"
             />
             <div className="flex gap-5">
-              <div className="grid grid-cols-2 h-[200px] gap-5">
+              <div className="grid grid-cols-2 h-[500px] gap-5 mt-[110px] mr-[5px]">
                 <Image
                   src="/images/ship.png"
                   width={250}
                   height={400}
                   alt="logo"
-                  className="rounded-xl"
+                  className="rounded-xl h-70 "
                 />
                 <Image
                   src="/images/ship.png"
                   width={250}
                   height={200}
                   alt="logo"
-                  className="rounded-xl"
+                  className="rounded-xl h-70"
                 />
                 <Image
                   src="/images/ship.png"
                   width={250}
                   height={300}
                   alt="logo"
-                  className="rounded-xl"
+                  className="rounded-xl h-70"
                 />
                 <Image
                   src="/images/ship.png"
                   width={250}
                   height={200}
                   alt="logo"
-                  className="rounded-xl"
+                  className="rounded-xl h-70"
                 />
               </div>
               <div className="h-[100px] ">
                 <Image
                   src="/images/ship.png"
-                  width={400}
+                  width={530}
                   height={100}
                   alt="logo"
-                  className="rounded-xl h-[500] right-"
+                  className="rounded-xl h-[580] mt-[110px] "
                 />
                 <Image
                   src="/images/ship.png"
                   width={250}
-                  height={250}
+                  height={200}
                   alt="logo"
-                  className="rounded-xl h-[260px] absolute left-110 top-670 "
+                  className="rounded-xl h-[280px] absolute  mt-[-280] left-75"
                 />
               </div>
             </div>
