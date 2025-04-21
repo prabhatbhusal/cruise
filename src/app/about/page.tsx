@@ -27,65 +27,13 @@ const page = () => {
         "Escape the ordinary with a private cruise designed just for you.",
     },
   ];
-  const sections = [
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image1.png)] bg-blend-overlay text-white",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image3.png)] bg-blend-multiply text-white p-40 gap-5",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image3.png)] bg-blend-overlay text-white",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image4.png)] bg-blend-overlay text-white",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image5.png)] bg-blend-overlay text-white",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-    {
-      style:
-        "h-100 w-full bg-[#23918BA6] flex flex-col justify-center items-center bg-[url(/images/image1.png)] bg-blend-overlay text-white",
-      title: "ONE CRUISE AT A TIME",
-      content:
-        "Where every journey is as unforgettable as the <br/>destination- your passport to all things cruising.",
-    },
-  ];
 
 
 
 
 
-  const images = [
-    "/images/image1.png",
-    "/images/image2.png",
-    "/images/image1.png",
-    "/images/image1.png",
-    "/images/image1.png",
-    "/images/image1.png",
-    "/images/image1.png",
-    "/images/image1.png",
-  ];
+
+  
   return (
     <div>
       <div
@@ -119,7 +67,12 @@ const page = () => {
           waves fade.
         </p>
       </div>
-      <div className="h-100 "></div>
+      <div
+        className="w-full h-[400px] bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url(/images/image1.png)" }}
+      >
+        {/* Empty container for parallax effect */}
+      </div>
       <div className="relative bg-gray-700 bg-[url(/images/ship.png)] bg-blend-multiply text-white px-40 py-40 flex flex-row gap-10 justify-center items-center">
         <Image src="/images/ship.png" width={500} height={100} alt="images" />
 
